@@ -5,30 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sai Kiran Reddy — Software Engineer</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <header class="header hero">
-  <div class="profile-pic">
-    <img src="assets/images/profile.jpg" alt="Sai Kiran Reddy" />
-  </div>
+  <!-- HERO / HEADER -->
+<header class="hero">
+  <div class="hero__inner">
+    <img class="hero__avatar" src="assets/images/profile.jpg" alt="Sai Kiran Reddy" loading="eager" />
 
-  <div class="headline">
-    <h1>Sai Kiran Reddy</h1>
-    <p>Software Engineer • Java · Spring Boot · React · AWS</p>
+    <h1 class="hero__title">Sai Kiran Reddy</h1>
+    <p class="hero__subtitle">Software Engineer • Java · Spring Boot · React · AWS</p>
 
-    <div class="badges">
+    <div class="hero__badges">
       <span class="badge">4+ yrs experience</span>
       <span class="badge">Distributed Systems</span>
       <span class="badge">CI/CD & DevOps</span>
       <span class="badge">Open to opportunities</span>
     </div>
 
-    <div class="cta-row">
-      <a class="btn primary" href="resume.pdf" download="SaiKiranReddy-Resume.pdf">Download Résumé</a>
+    <div class="hero__cta">
+      <a class="btn btn-primary" href="resume.pdf" download="SaiKiranReddy-Resume.pdf">Download Résumé</a>
       <a class="btn" href="#contact">Contact</a>
-      <a class="btn" href="https://github.com/saikiran674" target="_blank">GitHub</a>
-      <a class="btn" href="https://www.linkedin.com/in/saikiranrdd01/" target="_blank">LinkedIn</a>
+      <a class="btn" href="https://github.com/saikiran674" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/saikiranrdd01" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </header>
+<nav class="topnav">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
 
 
 
@@ -180,36 +186,43 @@
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="grid three">
-        <div class="card">
-          <h3>Real‑Time Financial Dashboard</h3>
-          <p class="muted">Java · Spring Boot · React · WebSockets · PostgreSQL · AWS</p>
-          <p>Streams live market data with role‑based access; charts & alerts; containerized and deployed on AWS.</p>
-          <!-- Update the GitHub URL when available -->
-          <a href="https://github.com/saikiran674" target="_blank" rel="noreferrer">View on GitHub</a>
-        </div>
-        <div class="card">
-          <h3>AI‑Based Patient Risk Predictor</h3>
-          <p class="muted">Python · TensorFlow · Flask · MongoDB · Kubernetes</p>
-          <p>Predicts patient risk scores with explainability; containerized services orchestrated on GKE.</p>
-          <a href="https://github.com/saikiran674" target="_blank" rel="noreferrer">View on GitHub</a>
-        </div>
-        <div class="card">
-          <h3>Microservices Starter (Java/Kafka)</h3>
-          <p class="muted">Spring Boot · Kafka · Elasticsearch · Prometheus</p>
-          <p>Event‑driven services with schema‑first APIs, logging/metrics, and a developer‑friendly local setup.</p>
-          <a href="https://github.com/saikiran674" target="_blank" rel="noreferrer">View on GitHub</a>
-        </div>
-        <div class="card">
-          <h3>Commit Activity Visualizer</h3>
-          <p class="muted">React · TypeScript</p>
-          <p>Charts weekly and monthly commit counts; inspired by contribution heatmaps.</p>
-          <a href="https://github.com/saikiran674" target="_blank" rel="noreferrer">View on GitHub</a>
+    <section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="cards">
+    <article class="card">
+      <img class="card__img" src="assets/images/project1.png" alt="Real-Time Financial Dashboard" loading="lazy">
+      <div class="card__body">
+        <h3>Real-Time Financial Dashboard</h3>
+        <p>Spring Boot · React · WebSockets · PostgreSQL · AWS</p>
+        <div class="card__links">
+          <a class="btn" href="https://github.com/saikiran674" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
-    </section>
+    </article>
+
+    <article class="card">
+      <img class="card__img" src="assets/images/project2.png" alt="AI-Based Patient Risk Predictor" loading="lazy">
+      <div class="card__body">
+        <h3>AI-Based Patient Risk Predictor</h3>
+        <p>TensorFlow · Flask · MongoDB · Kubernetes</p>
+        <div class="card__links">
+          <a class="btn" href="https://github.com/saikiran674" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card__img" src="assets/images/project3.png" alt="Commit Activity Visualizer" loading="lazy">
+      <div class="card__body">
+        <h3>Commit Activity Visualizer</h3>
+        <p>React · TypeScript</p>
+        <div class="card__links">
+          <a class="btn" href="https://github.com/saikiran674" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
 
     <section id="contact">
       <h2>Contact</h2>
