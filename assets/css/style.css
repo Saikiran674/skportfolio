@@ -1,5 +1,6 @@
 /* Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
+
 /* --- HERO --- */
 .hero {
   position: relative;
@@ -184,4 +185,9 @@ section {
   border-radius: 10px;
   margin-bottom: 12px;
 }
+/* If two .topnav are present, hide the second one */
+.topnav + .topnav { display: none; }
+
+/* Or hide the old template nav if it has a different class/id */
+nav:not(.topnav) { display: none; } /* use only if you’re sure the old nav has no `topnav` class */
 
