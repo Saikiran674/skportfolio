@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sai Kiran Reddy — Software Engineer</title>
+  <meta name="description" content="Java & Spring Boot backend engineer with React/Angular front-ends, AWS cloud, and CI/CD automation." />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #111826;
+      --muted: #9aa7b2;
+      --text: #e6eef5;
+      --accent: #60a5fa; /* blue-400 */
+      --accent-2: #34d399; /* emerald-400 */
+      --chip: #1f2937;
+      --border: #233044;
+    }
+    * { box-sizing: border-box }
+    html, body { height: 100% }
+    body {
+      margin: 0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text); background: linear-gradient(180deg, #0b0f14 0%, #0b0f14 40%, #09121d 100%);
+      scroll-behavior: smooth;
+    }
+    a { color: var(--accent); text-decoration: none }
+    a:hover { text-decoration: underline }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px }
+    header { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: center; padding: 28px 0 12px }
+    header img { width: 120px; height: 120px; border-radius: 16px; object-fit: cover; border: 1px solid var(--border) }
+    .headline h1 { margin: 0; font-size: 28px; letter-spacing: 0.2px }
+    .headline p { margin: 6px 0 0; color: var(--muted) }
+    .badges { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px }
+    .badge { padding: 4px 10px; background: var(--chip); border: 1px solid var(--border); border-radius: 999px; font-size: 13px }
+
+    nav { position: sticky; top: 0; backdrop-filter: blur(10px); background: rgba(9, 18, 29, 0.6); border-bottom: 1px solid var(--border); z-index: 10 }
+    nav .nav { display: flex; gap: 14px; padding: 10px 0 }
+    nav a { padding: 8px 12px; border-radius: 10px; color: var(--text) }
+    nav a:hover { background: var(--chip) }
+
+    section { margin: 28px 0; padding: 22px; background: var(--card); border: 1px solid var(--border); border-radius: 16px }
+    section h2 { margin-top: 0; font-size: 20px; letter-spacing: 0.4px }
+    .muted { color: var(--muted) }
+
+    .grid { display: grid; gap: 16px }
+    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)) }
+    .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)) }
+    @media (max-width: 900px){ .grid.two, .grid.three { grid-template-columns: 1fr } header{ grid-template-columns: 80px 1fr } header img{ width: 80px; height: 80px } }
+
+    .card { padding: 16px; background: #0e1723; border: 1px solid var(--border); border-radius: 14px }
+    .card h3 { margin: 0 0 6px; font-size: 16px }
+
+    .list { list-style: none; padding-left: 0; margin: 10px 0 0 }
+    .list li { margin: 8px 0 }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px }
+    .chip { background: var(--chip); border: 1px solid var(--border); padding: 6px 10px; border-radius: 999px; font-size: 13px }
+
+    .cta-row { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap }
+    .btn { display: inline-block; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--border); background: #0e1723; color: var(--text) }
+    .btn.primary { background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: #0b0f14; font-weight: 600; border: none }
+
+    footer { text-align: center; color: var(--muted); padding: 40px 0 20px }
+  </style>
+</head>
+<body>
+  <!--
+    === Quick Instructions ===
+    1) Replace placeholders (email, photo path, resume link).
+    2) Save this file as index.html at the repo root.
+    3) git add . && git commit -m "Add custom portfolio" && git push
+    4) Enable GitHub Pages: Settings → Pages → Source: main / root
+  -->
+
+  <div class="container">
+    <header>
+      <!-- Replace the image src with your real photo path or a GitHub avatar URL -->
+      <img src="https://avatars.githubusercontent.com/u/000000?v=4" alt="Sai Kiran Reddy" />
+      <div class="headline">
+        <h1>Sai Kiran Reddy</h1>
+        <p>Software Engineer • Java · Spring Boot · React · AWS</p>
+        <div class="badges">
+          <span class="badge">4+ yrs experience</span>
+          <span class="badge">Distributed Systems</span>
+          <span class="badge">CI/CD & DevOps</span>
+          <span class="badge">Open to opportunities</span>
+        </div>
+        <div class="cta-row">
+          <!-- Replace with your resume link or file in the repo -->
+          <a class="btn primary" href="#" target="_blank" rel="noreferrer">Download Résumé</a>
+          <a class="btn" href="#contact">Contact</a>
+          <a class="btn" href="https://github.com/saikiran674" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/saikiran-gollampally" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section id="about">
+      <h2>About</h2>
+      <p class="muted">Dallas, Texas • <a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a></p>
+      <p>
+        I’m <strong>Sai Kiran Reddy</strong>, a software engineer focused on building scalable backends and clean, modern front‑ends.
+        I work primarily with <strong>Java, Spring Boot, REST APIs</strong> and <strong>React/TypeScript</strong>, and I deploy to the cloud with
+        <strong>AWS, Docker, and Kubernetes</strong>. I care about performance, reliability, and developer experience.
+      </p>
+      <ul class="list">
+        <li>⚙️ Built microservices handling 10k+ concurrent users; improved p95 latency by ~25%.</li>
+        <li>☁️ Achieved 99.99% uptime on AWS (EKS/ECS, Lambda, S3) with robust observability.</li>
+        <li>🚀 Automated CI/CD with Jenkins/Terraform & GitHub Actions, cutting release time ~30%.</li>
+        <li>🤖 Contributed to GenAI-powered internal tools (e.g., finance assistant, ChatCFO).</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">Java (8/11/17/21)</span>
+        <span class="chip">Spring Boot</span>
+        <span class="chip">REST / OpenAPI</span>
+        <span class="chip">React · Angular · TS</span>
+        <span class="chip">Node.js</span>
+        <span class="chip">AWS (EC2, S3, Lambda, EKS)</span>
+        <span class="chip">Docker · Kubernetes</span>
+        <span class="chip">Kafka · RabbitMQ</span>
+        <span class="chip">Elasticsearch</span>
+        <span class="chip">PostgreSQL · MySQL · MongoDB</span>
+        <span class="chip">GitHub Actions · Jenkins</span>
+        <span class="chip">Terraform</span>
+        <span class="chip">OAuth2 · OWASP</span>
+        <span class="chip">Prometheus · Grafana</span>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Software Engineer II — JPMorgan Chase</h3>
+          <p class="muted">Jan 2024 — Present</p>
+          <ul class="list">
+            <li>Designed and scaled Spring Boot microservices; 10k+ concurrent users; p95 latency ↓ ~25%.</li>
+            <li>Deployed workloads to AWS (EKS/ECS, Lambda, S3); ensured 99.99% availability.</li>
+            <li>Hardened APIs with OAuth2 & OWASP; reduced security vulnerabilities ~40%.</li>
+            <li>Built internal AI assistant (ChatCFO) features to speed up finance workflows.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Software Engineer — UnitedHealth Group</h3>
+          <p class="muted">2019 — 2022</p>
+          <ul class="list">
+            <li>Developed REST APIs and React UIs; improved operational efficiency by ~30%.</li>
+            <li>Optimized PostgreSQL queries; achieved ~35% better DB performance.</li>
+            <li>Implemented CI/CD pipelines with test automation and observability.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid three">
+        <div class="card">
+          <h3>Real‑Time Financial Dashboard</h3>
+          <p class="muted">Java · Spring Boot · React · WebSockets · PostgreSQL · AWS</p>
+          <p>Streams live market data with role‑based access; charts & alerts; containerized and deployed on AWS.</p>
+          <!-- Update the GitHub URL when available -->
+          <a href="https://github.com/saikiran674" target="_blank" rel="noreferrer">View on GitHub</a>
+        </div>
+        <div class="card">
+          <h3>AI‑Based Patient Risk Predictor</h3>
+          <p class="muted">Python · TensorFlow · Flask · MongoDB · Kubernetes</p>
+          <p>Predicts patient risk scores with explainability; containerized services orchestrated on GKE.</p>
+          <a href="https://github.com/saikiran674" target="_blank" rel="noreferrer">View on GitHub</a>
+        </div>
+        <div class="card">
+          <h3>Microservices Starter (Java/Kafka)</h3>
+          <p class="muted">Spring Boot · Kafka · Elasticsearch · Prometheus</p>
+          <p>Event‑driven services with schema‑first APIs, logging/metrics, and a developer‑friendly local setup.</p>
+          <a href="https://github.com/saikiran674" target="_blank" rel="noreferrer">View on GitHub</a>
+        </div>
+        <div class="card">
+          <h3>Commit Activity Visualizer</h3>
+          <p class="muted">React · TypeScript</p>
+          <p>Charts weekly and monthly commit counts; inspired by contribution heatmaps.</p>
+          <a href="https://github.com/saikiran674" target="_blank" rel="noreferrer">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Interested in teaming up, hiring, or just talking shop? I’m happy to chat.</p>
+      <div class="grid two">
+        <div class="card">
+          <h3>Direct</h3>
+          <ul class="list">
+            <li>Email: <a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/saikiran-gollampally" target="_blank" rel="noreferrer">/in/saikiran-gollampally</a></li>
+            <li>GitHub: <a href="https://github.com/saikiran674" target="_blank" rel="noreferrer">@saikiran674</a></li>
+            <li>Location: Dallas, Texas, USA</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Quick Message</h3>
+          <!-- Simple mailto form approach (no backend required). Replace email. -->
+          <form action="mailto:REPLACE_WITH_YOUR_EMAIL" method="post" enctype="text/plain">
+            <div class="grid two">
+              <input style="padding:10px;border-radius:10px;border:1px solid var(--border);background:#0b121d;color:var(--text)" name="name" placeholder="Full name" required>
+              <input style="padding:10px;border-radius:10px;border:1px solid var(--border);background:#0b121d;color:var(--text)" type="email" name="email" placeholder="Email" required>
+            </div>
+            <textarea style="margin-top:10px;width:100%;min-height:120px;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0b121d;color:var(--text)" name="message" placeholder="Your message"></textarea>
+            <div class="cta-row"><button class="btn primary" type="submit">Send</button></div>
+          </form>
+          <p class="muted" style="margin-top:8px">Prefer privacy-first forms? Swap this for Formspree or EmailJS later.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Sai Kiran Reddy · Built with HTML/CSS · Deployed on GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
